@@ -1,0 +1,44 @@
+{
+  "name": "revotale/sms-fly",
+  "description": "PHP SMS-fly client",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "rusted_love",
+      "email": "rusted_love@revotale.com",
+      "homepage": "https://revotale.com"
+    }
+  ],
+  "keywords": [
+    "SMS Fly",
+    "SMS-fly API"
+  ],
+  "autoload": {
+    "psr-4": {
+      "RevoTale\\SMSFly\\": "src"
+    }
+  },
+  "scripts": {
+    "php-cs": "vendor/bin/php-cs-fixer fix",
+    "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon",
+    "test": [
+      "@phpstan",
+      "@php-cs"
+    ]
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": ">=2.18",
+    "phpstan/phpstan": "^1.10"
+  },
+  "require": {
+    "php": ">=8.2",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "ext-simplexml": "*",
+    "grisaia/time": "^0.2.0"
+  }
+}
