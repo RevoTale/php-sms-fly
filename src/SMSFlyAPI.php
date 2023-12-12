@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace RevoTale\SMSFly;
 
+use Grisaia\Time\TimeZone;
 use RevoTale\SMSFly\Data\MessagesResult;
 use RevoTale\SMSFly\Exceptions\CurlFailed;
 use RevoTale\SMSFly\Exceptions\ErrorReturned;
 use RevoTale\SMSFly\Exceptions\StateIsNotOk;
 use RevoTale\SMSFly\Types\Campaign\StateCode;
-use RevoTale\Time\TimeZone;
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\NullLogger;
 use SimpleXMLElement;

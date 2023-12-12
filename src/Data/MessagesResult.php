@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace RevoTale\SMSFly\Data;
 
 use DateTime;
+use Grisaia\Time\Timestamp;
 use RevoTale\SMSFly\SMSFlyAPI;
 use RevoTale\SMSFly\Types\Campaign\StateCode;
 use Exception;
-use RevoTale\Time\Timestamp;
 
 final class MessagesResult extends Container
 {
