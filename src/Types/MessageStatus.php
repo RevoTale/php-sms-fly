@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace RevoTale\SMSFly\Types;
 
-use function in_array;
 use InvalidArgumentException;
+
+use function in_array;
 
 final class MessageStatus extends StringType
 {

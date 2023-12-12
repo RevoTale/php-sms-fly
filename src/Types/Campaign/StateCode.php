@@ -1,9 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
-
 namespace RevoTale\SMSFly\Types\Campaign;
-
 
 use RevoTale\SMSFly\Types\StringType;
 

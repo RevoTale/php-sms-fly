@@ -22,9 +22,10 @@
   "scripts": {
     "php-cs": "vendor/bin/php-cs-fixer fix",
     "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon",
+    "test:style": "vendor/bin/php-cs-fixer fix --dry-run",
     "test": [
       "@phpstan",
-      "@php-cs"
+      "@test:style"
     ]
   },
   "prefer-stable": true,
