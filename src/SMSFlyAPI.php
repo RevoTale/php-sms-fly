@@ -13,6 +13,7 @@ use RevoTale\SMSFly\Types\Campaign\StateCode;
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\NullLogger;
 use SimpleXMLElement;
+
 use function is_bool;
 
 class SMSFlyAPI
@@ -70,7 +71,7 @@ class SMSFlyAPI
         $response = curl_exec($request);
         $this->logger?->debug("Response '$response'");
         curl_close($request);
-        if ( is_bool($response)) {
+        if (is_bool($response)) {
             $error = curl_error($request);
             $this->logger?->critical("Curl error '$error'");
             throw new CurlFailed($error, curl_errno($request));

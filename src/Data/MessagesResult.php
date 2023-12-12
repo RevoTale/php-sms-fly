@@ -33,8 +33,10 @@ final class MessagesResult extends Container
     public function getDate(): Timestamp
     {
         return Timestamp::fromDateTime(
-            new DateTime((string)$this->getData()->date,
-                SMSFlyAPI::getTimeZone()->toNativeDateTimeZone())
+            new DateTime(
+                (string)$this->getData()->date,
+                SMSFlyAPI::getTimeZone()->toNativeDateTimeZone()
+            )
         );
     }
 
